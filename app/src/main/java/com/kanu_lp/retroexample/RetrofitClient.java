@@ -14,7 +14,7 @@ public class RetrofitClient {
     public static Retrofit getClient() {
         if (retrofit==null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://karangajjar123.esy.es")
+                    .baseUrl("your url")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
