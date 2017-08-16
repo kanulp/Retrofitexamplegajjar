@@ -1,21 +1,19 @@
 # Retrofitexamplegajjar
 Sample retrofit example for get and post data from php/mysql
 
+OPEN README.md AS RAW from above list!!!
+
 Simply create 1 table and add id,name,role as columns (add some data)
 
 create 3 scripts from below and host in your server 
 
-connect.php
-
-
+connect.php code
 define('DBHOST','yourserver');
 define('DBUSER','yourvalue');
 define('DBUSERPASS','');
 define('DBNAME','yourvalue');
-
 define('MESSAGE_SUCCESS',"SUCCESS");
 define('MESSAGE_FAIL',"FAIL");
-
 $connection = mysqli_connect(DBHOST,DBUSER,DBUSERPASS,DBNAME) or error("Unable to connect to database : " . mysqli_connect_errorno());
 
 
@@ -38,7 +36,7 @@ if($result){
   $response["message"] = mysqli_error($connection);
 }
 
-encode($response,true);
+encode($response);
 ?>
 
 register.php
